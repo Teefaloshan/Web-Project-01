@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html dir ="rtl" lang="ar">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>قاوم | تسجيل الدخول</title>
+        <link rel="icon" type="image/png"  href="favicon.ico">
+        <link rel="stylesheet" href="Login.css">
+    </head>
+    <body>
+        <div class = "hero">
+            <video autoplay loop muted plays-inline class = "back-video">
+                <source src="video.mp4" type="video/mp4">
+            </video>
+            <nav>
+                <a href="Home.html"><img src="Logo4.PNG" class = "Logo"></a>
+                <ul>
+                    <li>
+                        <a href="#">الصفحة الرئيسية</a>
+                    </li>
+                    <li>
+                        <a href="#">الإستشارات النفسية</a>
+                    </li>
+                    <li>
+                        <a href="#">برامج</a>
+                    </li>
+                    <li>
+                        <a href="#">عبر</a>
+                    </li>
+                    <li>
+                        <a href="#">تواصل معنا</a>
+                    </li>
+                </ul>
+            </nav>
+       
+            <div id='login-form'class='login-page'>
+                <div class="form-box">
+                    <div class='button-box'>
+                        <div id='btn'></div>
+                        <button type='button'onclick='login()'class='toggle-btn'>تسجيل الدخول</button>
+                        <button type='button'onclick='register()'class='toggle-btn' algin = "center">تسجيل</button>
+                    </div>
+
+                <form id='login' class='input-group-login'>
+                <input type='text'class='input-field'placeholder='البريد الإلكتروني' required >
+                <input type='password'class='input-field'placeholder='كلمة السر' required>
+                <input type='checkbox'class='check-box'><span><strong>تذكرني</strong></span>
+                <button type='submit'class='submit-btn'><strong>تسجيل الدخول</strong></button>
+             </form>
+
+                 <form id='register' class='input-group-register'>
+                 <input type='text'class='input-field'placeholder='الاسم الاول' required>
+                 <input type='text'class='input-field'placeholder='اسم العائلة' required>
+                 <input type='email'class='input-field'placeholder='البريد الإلكتروني' required>
+                 <input type='password'class='input-field'placeholder='كلمة المرور' required>
+                 <input type='password'class='input-field'placeholder='تأكيد كلمة المرور'  required>
+                 <input type='checkbox'class='check-box' required><span><strong>أوافق على الشروط والأحكام</strong></span>
+                        <button type='submit'class='submit-btn'><strong>تسجيل</strong></button>
+                 </form>
+                </div>
+            </div>
+        </div>
+        <script>
+            var x=document.getElementById('login');
+            var y=document.getElementById('register');
+            var z=document.getElementById('btn');
+            function register()
+            {
+                x.style.left='-400px';
+                y.style.left='50px';
+                z.style.left='110px';
+            }
+            function login()
+            {
+                x.style.left='50px';
+                y.style.left='450px';
+                z.style.left='0px';
+            }
+        </script>
+        <script>
+            var modal = document.getElementById('login-form');
+            window.onclick = function(event) 
+            {
+                if (event.target == modal) 
+                {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+             </div>
+            </div>
+    </body>
+</html>
