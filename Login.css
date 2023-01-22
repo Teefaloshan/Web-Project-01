@@ -153,34 +153,29 @@ nav ul li :hover{
 	background:transparent;
 	border:0;
 	outline: none;
-    cursor: pointer;
+        cursor: pointer;
 	position: relative;
-    text-align: center;
-    margin:0 auto;
-    margin-right: 9px;
-    color:white;
-    -webkit-transition: all 500ms ease;
-    -moz-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    transition: all 500ms ease;
+        color:white;
+       -webkit-transition: all 500ms ease;
+       -moz-transition: all 500ms ease;
+       -ms-transition: all 500ms ease;
+       -o-transition: all 500ms ease;
+       transition: all 500ms ease;
 }
+
 .toggle-btn2 {
 	padding:10px 10px;
 	background:transparent;
 	border:0;
 	outline: none;
-    cursor: pointer;
+        cursor: pointer;
 	position: relative;
-    text-align: center;
-    margin:0 auto;
-    margin-right: 23px;
-    color:white;
-    -webkit-transition: all 500ms ease;
-    -moz-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    transition: all 500ms ease;
+        color:white;
+       -webkit-transition: all 500ms ease;
+       -moz-transition: all 500ms ease;
+       -ms-transition: all 500ms ease;
+       -o-transition: all 500ms ease;
+       transition: all 500ms ease;
 }
 
 #btn {
