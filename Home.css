@@ -40,12 +40,16 @@ nav ul li {
     list-style: none;
     display: inline-block;
     margin-left: 40px;
+    
 }
 
 nav ul li a {
     text-decoration: none;
     color: #ccd4d4;
     font-size: 17px;
+    position:relative;
+    float: right;
+    right:auto;
 }
 
 img {
@@ -305,5 +309,9 @@ h4 {
 .image__title {
 	font-size: 2em;
 	font-weight: bold;
+}
+
+.login{
+    margin-right: 30px;
 }
 
