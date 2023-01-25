@@ -40,16 +40,12 @@ nav ul li {
     list-style: none;
     display: inline-block;
     margin-left: 40px;
-    
 }
 
 nav ul li a {
     text-decoration: none;
     color: #ccd4d4;
     font-size: 17px;
-    position:relative;
-    float: right;
-    right:auto;
 }
 
 img {
@@ -135,13 +131,14 @@ font-size: 30px;
 
 div.bottom {
 width: auto;
-height: 400px;
+height: 250px;
 margin: auto;
 padding-top: 10px;
 background-color: white;
 text-align: right;
 color: #6899b4;
-margin-top: 140px;
+margin-top: 150px;
+margin-bottom: 0.2px;
 }
 
 div.title{
@@ -155,7 +152,25 @@ div.bottom img {
 width: 40px;
 height: 40px;
 margin-right: 40px;
-margin-top: 70px;
+margin-top: 50px;
+border-radius: 5px;
+}
+
+div.bottom img:hover{
+    background-color: #b34564;
+    width: 40px;
+    height: 40px;
+    opacity: 0.7;
+    border-radius: 5px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  -webkit-transition: all 500ms ease;
+   -moz-transition: all 500ms ease;   
+  -ms-transition: all 500ms ease;  
+   -o-transition: all 500ms ease;   
+  transition: all 500ms ease;
 }
 
 .column {
@@ -311,7 +326,47 @@ h4 {
 	font-weight: bold;
 }
 
-.login{
-    margin-right: 30px;
-}
+  
+  
+.container {
+    display: flex;
+    gap: 12px;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    padding: 30px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    height: 560px;
+    background-color: #fff;
+    margin-top: 5px;
+  }
+  .backcard{
+    background-color: #152238;
+    height: 500px;
+    width: 400px;
+    border-radius: 12px;
 
+  }
+  .card {
+    display: flex;
+     height: 450px;
+     width: 320px;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-top:  25px  ;
+    margin-right: 20px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .p1{
+    text-align: right;
+    color: #6899b4;
+    font-size: 30px;
+     font-weight: bold;
+    margin-top: 440px;
+  }
+
+  
