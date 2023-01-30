@@ -176,6 +176,7 @@ nav ul li :hover{
        -ms-transition: all 500ms ease;
        -o-transition: all 500ms ease;
        transition: all 500ms ease;
+	margin-right: 15px;
 }
 
 #btn {
