@@ -53,13 +53,13 @@
              </form>
 
                  <form id='register' class='input-group-register'>
-                 <input type='text'class='input-field'placeholder='الاسم الاول' required>
-                 <input type='text'class='input-field'placeholder='اسم العائلة' required>
-                 <input type='email'class='input-field'placeholder='البريد الإلكتروني' required>
-                 <input type='password'class='input-field'placeholder='كلمة المرور' required>
-                 <input type='password'class='input-field'placeholder='تأكيد كلمة المرور'  required>
-                 <input type='checkbox'class='check-box' required><span><strong>أوافق على الشروط والأحكام</strong></span>
-                        <button type='submit'class='submit-btn'><strong>تسجيل</strong></button>
+                 <input type='text'class='input-field'placeholder='الاسم الاول' required  id="fname">
+                 <input type='text'class='input-field'placeholder='اسم العائلة' required id="lname">
+                 <input type='email'class='input-field'placeholder='البريد الإلكتروني' required >
+                 <input type='password'class='input-field'placeholder='كلمة المرور' required id="pass">
+                 <input type='password'class='input-field'placeholder='تأكيد كلمة المرور'  required id="repass">
+                 <input type='checkbox'class='check-box' required id="gree"><span><strong>أوافق على الشروط والأحكام</strong></span>
+                        <button type='submit'class='submit-btn' id="adduser" href="#" onclick="saveData();"><strong>تسجيل</strong></button>
                  </form>
                 </div>
             </div>
@@ -90,6 +90,25 @@
                     modal.style.display = "none";
                 }
             }
+        </script>
+        
+        <script >
+
+            function saveData() {
+            var username = document.getElementById("fname").value;
+            var lastname = document.getElementById("lname").value;
+            var pass = document.getElementById("repass").value;
+            var password = document.getElementById("pass").value;
+    
+
+  
+    if ( password == pass) {
+       
+        alert(username +lastname+ "لقد تم تسجيلك بنجاح");
+      
+      } else {
+        alert("اسم المستخدم او كلمة المرور غير صحيح !")
+      }}
         </script>
              </div>
             </div>
